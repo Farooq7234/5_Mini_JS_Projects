@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightseagreen;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position:bottom;
+}
+
+.container i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    transform: translate(-50%,-50%);
+    filter: invert();
+    opacity: 0;
+}
+

@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background-color: rgb(0, 208, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#card{
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid black;
+  position: relative;
+}
+
+#full-screen{
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: none;
+}
+
+
+.progress-container {
+  width: 280px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+#progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  animation: fillProgress 3s forwards;
+}
+
+@keyframes fillProgress {
+  to {
+    width: 100%;
+  }
+}
+
+
+#storiyan{
+  height: 90px;
+  padding: 15px;
+  border-bottom: 2px solid #dadada;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#storiyan::-webkit-scrollbar{
+  display:none
+}
+
+.story{
+  border: 3px solid red;
+  height: 80px;
+  border-radius: 50%;
+  width: 80px;
+  overflow: hidden;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.story img{
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  cursor: pointer;
+}
+
